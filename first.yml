@@ -1,0 +1,11 @@
+# This block has a "```yaml first.yml" tag
+# Creates `${outDir}/first.yml`
+heading: this is the first yml file
+sections:
+  - one: one
+
+
+  # this block has a "```yml first.yml" tag
+  # is appended to ${outDir}/first.yml
+  - two: two
+

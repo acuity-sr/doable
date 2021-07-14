@@ -1,0 +1,19 @@
+{
+  "name": "doable",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/doable.js",
+  "bin": {
+    "doable": "cli_node.js"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "sramam",
+  "license": "ISC",
+  "dependencies": {
+    "marked": "^2.1.3"
+  }
+}
