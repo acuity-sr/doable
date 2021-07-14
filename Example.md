@@ -36,7 +36,8 @@ echo "appends to batch file"
 echo "appends to bash script"
 ```
 
-But we can also create custom file destination(s) for various blocks by attaching a filePath relative to outDir.
+But we can also create custom file destination(s) for various blocks by
+attaching a filePath relative to outDir.
 
 ````yml first.yml
 # This block has a "```yaml first.yml" tag
@@ -46,8 +47,8 @@ sections:
   - one: one
 ````
 
-Any number of destination files (and file formats) are possible "```yaml second.yaml"
-Note that doable does not syntax validate any of the file formats.
+Any number of destination files (and file formats) are possible "```yaml
+second.yaml" Note that doable does not syntax validate any of the file formats.
 
 ````yaml sub\second.yaml
 # This block has a "```yaml second.yaml" tag
@@ -72,5 +73,5 @@ sections:
 The idea is to create a single markdown file that provides a running commentary
 to create a system that involves touching various tools.
 
-`doable` is agnostic to the file extensions. Without a filePath for output, it'll create a default
-`${outDir}/run.${extension}` file.
+`doable` is agnostic to the file extensions. Without a filePath for output,
+it'll create a default `${outDir}/run.${extension}` file.
