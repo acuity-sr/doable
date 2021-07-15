@@ -35,7 +35,9 @@ Has cross-platform script-ability, allowing the generation of both `.bat` and
 9. `"```null"` is an annotation that is ignored.
 
 
-See [Example.md](https://raw.githubusercontent.com/acuity-sr/doable/main/Example.md) for details.
+For details, see 
+- [Example.md](https://github.com/acuity-sr/doable/blob/main/Example.md) 
+- [Example.md in it's raw form](https://raw.githubusercontent.com/acuity-sr/doable/main/Example.md) 
 
 ## Installation
 
