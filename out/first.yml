@@ -1,0 +1,9 @@
+# annotation '```yaml first.yml': Creates `${outDir}/first.yml`
+heading: this is the first yml file
+sections:
+  - one: one
+
+
+  # annotation '```yml first.yml': appended to ${outDir}/first.yml
+  - two: two
+

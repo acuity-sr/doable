@@ -28,9 +28,12 @@ Has cross-platform script-ability, allowing the generation of both `.bat` and
    `run.sh` _and_ `run.bat`. But they have to be started before the first naked
    code-block. If neither `run.sh` nor `run.bat` is found, it'll be output to
    `stdout`.
-5. Overwrites any generated files if they exist.
-6. Adds a `#!/usr/bin/env sh` to `sh` files by default.
+5. `"```bat/sh fname"` or `"```sh/bat fname"` adds a script to both `fname.sh` and `fname.bat`.
+6. Overwrites any generated files if they exist.
 7. File output is not sanitized, or otherwise validated.
+8. Adds a `#!/usr/bin/env sh` to `sh` files by default.
+9. `"```null"` is an annotation that is ignored.
+
 
 See [Example.md](https://raw.githubusercontent.com/acuity-sr/doable/main/Example.md) for details.
 
