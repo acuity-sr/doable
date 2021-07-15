@@ -5,14 +5,14 @@ In it's raw form: [Example.md](https://raw.githubusercontent.com/acuity-sr/doabl
 
 ## Executing the example:
 
-```
+```null
 $ doable ./Example.md out
 annotation '```': will be output to stdout, because neither run.bat nor run.sh have been started yet.
 
 
 $
 ```
-The various files generated are viewable at [`out`](https://github.com/acuity-sr/doable/tree/main/out)
+The various files generated are viewable at [`out`](./out)
 
 ## Example annotations
 
@@ -39,8 +39,8 @@ echo "annotation: '```bat my_script.bat': creates ${outDir}/my_script.bat"
 ```
 
 
-### Annotation ```sh my_script .sh
-```sh my_script .sh
+### Annotation ```sh my_script.sh
+```sh my_script.sh
 # A bash comment
 echo "annotation: '```sh my_script.sh': creates ${outDir}/my_script.sh"
 ```

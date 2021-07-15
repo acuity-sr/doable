@@ -1,3 +1,0 @@
-# A bash comment
-echo "annotation: '```sh my_script.sh': creates ${outDir}/my_script.sh"
-
