@@ -8,7 +8,9 @@
   },
   "type": "module",
   "scripts": {
-    "test": "node cli_node.js Example.md out && node cli_node.js Error.md"
+    "test": " npm run success && npm run error",
+    "success": "node cli_node.js Example.md out",
+    "error": "node cli_node.js Error.md"
   },
   "keywords": [],
   "author": "sramam",

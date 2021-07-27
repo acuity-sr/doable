@@ -17,22 +17,16 @@ Has cross-platform script-ability, allowing the generation of both `.bat` and
 
 ## The Rules:
 
-1. Code blocks can have two kinds of annotations:
-   a. ` "```yaml" ` or ` "```bat" ` - which will result in an output file
-   `${outDir}/run.${extension}`
-   b. ` "```yaml config.yaml" ` - which will result in an output filr
-   `${outDir}/config.yml`
-2. Repeating the annotation concatenates the code blocks into a single file.
-3. No inherent limit on the number of unique annotations.
-4. A code-block without an annotation is encountered, it is assumed to belong to
-   `run.sh` _and_ `run.bat`. But they have to be started before the first naked
-   code-block. If neither `run.sh` nor `run.bat` is found, it'll be output to
-   `stdout`.
+1. Code blocks can have three kinds of annotations:
+   a. ` "```" ` - no annotation, output to stdout
+   b. ` "```lang"` - block is ignored. Allows using IDE formatting (diff, code)
+   c. ` "```lang fname"` - output creates or appends to fname
+2. When `fname` is encountered for the first time, it creates/overwrites.
+3. If `fname` is repeated, the blocks are concatenated, in order of appearance.
+4. No inherent limit on the number of unique annotations or repetitions
 5. `"```bat/sh fname"` or `"```sh/bat fname"` adds a script to both `fname.sh` and `fname.bat`.
-6. Overwrites any generated files if they exist.
 7. File output is not sanitized, or otherwise validated.
 8. Adds a `#!/usr/bin/env sh` to `sh` files by default.
-9. `"```null"` is an annotation that is ignored.
 
 
 For details, see 

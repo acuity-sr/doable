@@ -7,4 +7,8 @@ const fs = {
     fs_.writeFileSync(fPath, contents, "utf8"),
   mkdirp: (dir: string) => fs_.mkdirSync(dir, { recursive: true }),
 };
-doable(fs, marked, [...Deno.args], !!Deno.env.get("DOABLE_TRACE"));
+try {
+  doable(fs, marked, [...Deno.args], !!Deno.env.get("DOABLE_TRACE"));
+} catch (err) {
+  console.error(err.message);
+}
