@@ -1,0 +1,9 @@
+# annotation '```yaml second.yaml': creates '${outDir}/sub/second.yaml'
+heading: this is the second yaml file
+sections:
+  - A: a
+
+
+  # annotation '```yml first.yaml': appended to ${outDir}/sub/second.yaml
+  - B: b
+

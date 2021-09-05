@@ -130,8 +130,8 @@ sections:
   - two: two
 ```
 
-### Annotation ```yml sub\second.yaml
-```yml sub\second.yaml
+### Annotation ```yml sub/second.yaml
+```yml sub/second.yaml
   # annotation '```yml first.yaml': appended to ${outDir}/sub/second.yaml
   - B: b
 ```
@@ -141,3 +141,10 @@ to create a system that involves touching various tools.
 
 `doable` is agnostic to the file extensions. Without a filePath for output,
 it'll create a default `${outDir}/run.${extension}` file.
+
+
+### Create file that we will append to later
+```yml sub/append.yml
+Section 1:
+  This section was created by Example.md
+```
